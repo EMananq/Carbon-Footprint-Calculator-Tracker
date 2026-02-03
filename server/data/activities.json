@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ml5910ez5qhhl78p48p",
+    "userId": "ml58t1m7odsf5nnl68n",
+    "category": "transport",
+    "type": "car_petrol",
+    "value": 9.6,
+    "unit": "km",
+    "emission": 1.15,
+    "date": "2026-02-02",
+    "notes": "",
+    "createdAt": "2026-02-02T14:12:13.787Z"
+  }
+]
