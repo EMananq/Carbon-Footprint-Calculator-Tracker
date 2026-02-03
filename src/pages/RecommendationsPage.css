@@ -1,0 +1,184 @@
+/* Recommendations Page Styles */
+.recommendations-page {
+  padding: var(--space-xl) 0;
+  padding-bottom: 100px;
+}
+
+.page-header {
+  margin-bottom: var(--space-xl);
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+  color: var(--text-secondary);
+}
+
+/* Recommendations Grid */
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.recommendations-section h2,
+.chatbot-section h2 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-md);
+}
+
+/* Recommendations List */
+.recommendations-list {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  backdrop-filter: blur(20px);
+  min-height: 400px;
+}
+
+.recommendation-card {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  animation: fadeIn 0.3s ease;
+}
+
+.recommendation-card:last-child {
+  margin-bottom: 0;
+}
+
+.rec-number {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+.recommendation-card p {
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.loading-recs {
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.loading-recs p {
+  margin-top: var(--space-md);
+  color: var(--text-muted);
+}
+
+.no-recs {
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+/* Tips Section */
+.tips-section h2 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-lg);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.tip-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  backdrop-filter: blur(20px);
+}
+
+.tip-card.transport {
+  border-top: 3px solid var(--accent-blue);
+}
+
+.tip-card.energy {
+  border-top: 3px solid var(--accent-orange);
+}
+
+.tip-card.diet {
+  border-top: 3px solid var(--accent-green);
+}
+
+.tip-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.tip-card h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.tip-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tip-card li {
+  padding: var(--space-sm) 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.tip-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+}
+
+.tip-card li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+}
