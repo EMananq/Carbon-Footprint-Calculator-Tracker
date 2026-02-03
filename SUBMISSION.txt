@@ -1,0 +1,7 @@
+GitHub Repo: https://github.com/EMananq/Carbon-Footprint-Calculator-Tracker
+Video Demo: [Insert Video Link Here]
+
+Student Details:
+Name: Manan
+Project: Carbon Footprint Calculator & Tracker
+Tech Stack: React, Node.js, Firebase, Google Gemini AI
